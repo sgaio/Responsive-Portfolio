@@ -1,0 +1,337 @@
+*{
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+html, body {
+    height: 100%;
+    
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.topmenu {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+   
+}
+
+.name {
+    width: 25%;
+    background: #4aaaa5;
+    color: white;
+    font-size: 32px;
+    height: 125px;
+    width: 300px;
+    padding-top: 45px;
+    text-align:center;
+
+}
+
+.empty {
+    background: white;
+    width: 50%;
+}
+
+.links {
+    width: 35%;
+    font-size: 20px;
+    padding-top: 50px;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+
+.background {
+    width: 100%;
+    min-height: 100%;
+    background-image:url(../images/pipes.png);
+    padding: 20px;
+    margin-bottom: -30px;
+    
+}
+
+.whitebox {
+    width: 960px;
+    background: white;
+    margin: 0 auto;
+    padding: 10px;
+  
+    
+}
+
+h1 {
+    margin-left: 25px;
+    font-size: 32px;
+    text-align: left;
+    color: #4aaaa5;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #777777;
+  
+}
+
+.topcontainer {
+    display:flex;
+    
+}
+
+.picture {
+ margin: 20px;
+ width: 30%;
+}
+
+.headshot {
+  height: 250px;
+  border-radius: 10px;
+
+}
+
+.mainbio{
+    margin-top: 50px;
+    margin-right: 20px;
+    width: 70%;
+}
+
+.bottombio {
+    margin: 20px;
+}
+footer {
+    background: #666666;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.foot {
+    height: 50px;
+
+}
+
+/* contact */
+
+input[type=text], textarea {
+    width: 100%; 
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+  }
+#button {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 12px;
+    border: none;
+
+  }
+  #button:hover {
+    background-color: #777777;
+  }
+  
+  .contactcontainer {
+    padding: 10px;
+    margin-bottom: -50px;
+    
+  }
+  #message {
+      height: 250px;
+  }
+
+  /* Portfolio */
+
+  .row {
+      display:flex;
+  
+  }
+
+
+.empty1 , .empty2, .empty3 , .empty4 , 
+.hang , .game , .triv , .widget , .rps {
+    width: 275px; 
+    height: 275px;
+    margin: 20px;
+    background-size: 275px 275px;
+    
+}
+
+.hang {
+    background-image:url(../images/Hangman.jpeg);
+  
+
+}
+
+.game {
+        background-image:url(../images/RPG-Game.jpeg);
+      
+}
+
+.triv {
+    background-image:url(../images/TriviaGame.jpeg);
+   
+}
+
+.widget {
+    background-image:url(../images/RutgersInfoWidget.jpeg);
+ 
+}
+
+.rps {
+    background-image:url(../images/RockPaperScissors.jpeg);
+}
+.caption {
+    background: #4aaaa5;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 210px;
+    
+}
+
+
+/* Responsive  */
+
+/* homepage responsive at 980 */
+
+@media screen and (max-width:980px)
+{
+.wrapper , .topmenu , .name , .empty , .links , 
+.background , .whitebox , .topcontainer , .picture ,
+.headshot , .mainbio , .bottombio , .foot , .stick
+
+{
+    width: 100%;
+}
+
+.mainbio {
+    width: 80%;
+}
+
+.picture {
+    width: 20%;
+}
+
+}
+
+/* homepage responsive at 768 */
+
+@media screen and (max-width:768px)
+{
+    .wrapper , .topmenu , .name , .empty , .links , 
+    .background , .whitebox , .topcontainer , .picture ,
+    .headshot , .mainbio , .bottombio , .foot , .stick
+    
+    {
+        width: 100%;
+    }
+    
+    .mainbio {
+        margin: 0px;
+    }
+    
+
+    .name {
+        width: 40%;
+    }
+    .links {
+        width: 40%;
+        /* margin-right: 20px; */
+    }
+    .empty {
+        width: 20%;
+    }
+
+}
+
+/* Homepage responsive at 640 */
+
+@media screen and (max-width:640px)
+{
+    .wrapper , .topmenu , .name , .empty , .links , 
+    .background , .whitebox , .topcontainer , .picture ,
+    .headshot , .mainbio , .bottombio , .foot , .stick
+    
+    {
+        width: 100%;
+    }
+
+    nav {
+        position: static;
+    }
+    .topmenu {
+        flex-direction: column;
+       
+    }
+
+    .name {
+        width: 100%;
+        position: static;
+    }
+
+    .links{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .topcontainer {
+        flex-direction: column;
+    }
+
+    .picture {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .resp {
+        margin: 0px;
+    }
+
+}
+
+/* Portfolio responsive at 640 */
+
+@media screen and (max-width:640px)
+{
+    .row{
+        flex-direction: column;
+    }
+    .hang , .game , .triv , .widget , .rps {
+        width: 100%;
+        margin: 0 auto;
+        height: 400px;
+        margin-bottom: 20px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        
+    }
+    .caption {
+        margin-top: 330px;
+        position: relative;
+    }
+
+    .rps {
+        margin-bottom: 0px;
+    }
+
+    .truncate {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+  overflow: hidden;
+    }
+}
+
+
